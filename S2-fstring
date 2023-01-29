@@ -1,0 +1,5 @@
+foods ={"Spaggeti":"10$","Kebab":"15$"  ,"Steak":"25$","Biryani":"12$","Sushi":"17$","KFC":"14$"}
+for key, value in foods.items() :
+    print (key)
+Selectedfood= input("Select a food from menu:")
+print(f"You Selected '{Selectedfood}' and it's price is: '{foods[Selectedfood]}' , Your order has been submitted.")
