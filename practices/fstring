@@ -1,1 +1,10 @@
 
+print("spaggeti")
+print("kebab")
+print("steak")
+print("briyani")
+print("sushi")
+print("kfc")
+menu={"Spaggeti":"10$","Kebab":"15$","steak":"25$","biryani":"12$","sushi":"17$","kfc":"14$"}
+choosedfood=input("choose your food:")
+print(f"You Selected '{choosedfood}' and it's price is: '{menu[choosedfood]}', Your order has been submitted.")‏
