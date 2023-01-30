@@ -1,0 +1,17 @@
+import random
+
+def guess_number_game():
+  print("Guess the number between 1 and 100")
+  target = random.randint(1, 100)
+  guess = None
+
+  while guess != target:
+    guess = int(input("Your guess: "))
+    if guess < target:
+      print("Too low")
+    elif guess > target:
+      print("Too high")
+    else:
+      print("You won!")
+
+guess_number_game()
