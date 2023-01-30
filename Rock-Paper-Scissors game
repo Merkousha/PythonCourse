@@ -1,0 +1,55 @@
+print("Rock, Paper, Scissors")
+
+while True:
+    print("Enter choice \n1 for Rock \n2 for Paper \n3 for Scissors")
+    player1 = int(input("Player 1: "))
+    player2 = int(input("Player 2: "))
+    choice1 = ""
+    choice2 = ""
+
+    if player1 == 1:
+        choice1 = "Rock"
+    elif player1 == 2:
+        choice1 = "Paper"
+    elif player1 == 3:
+        choice1 = "Scissors"
+    else:
+        print("Invalid input. Try again")
+        continue
+
+    if player2 == 1:
+        choice2 = "Rock"
+    elif player2 == 2:
+        choice2 = "Paper"
+    elif player2 == 3:
+        choice2 = "Scissors"
+    else:
+        print("Invalid input. Try again")
+        continue
+
+    print("Player 1 chose " + choice1)
+    print("Player 2 chose " + choice2)
+
+    if choice1 == choice2:
+        print("It's a tie")
+    elif choice1 == "Rock":
+        if choice2 == "Paper":
+            print("Player 2 wins")
+        else:
+            print("Player 1 wins")
+    elif choice1 == "Paper":
+        if choice2 == "Scissors":
+            print("Player 2 wins")
+        else:
+            print("Player 1 wins")
+    elif choice1 == "Scissors":
+        if choice2 == "Rock":
+            print("Player 2 wins")
+        else:
+            print("Player 1 wins")
+
+    ans = input("Do you want to play again? (Y/N)")
+    if ans == "N" or ans == "n":
+        break
+
+print("\nThanks for playing!")
