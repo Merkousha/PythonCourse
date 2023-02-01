@@ -40,3 +40,6 @@ while True:
 # Release the camera and destroy the windows
 cap.release()
 cv2.destroyAllWindows()
+
+
+#In this code, we use a background subtractor (cv2.createBackgroundSubtractorMOG2) to detect the moving hand in the video feed. The background subtractor subtracts the background from the current frame to obtain a mask that shows only the moving objects. We then threshold the mask, erode and dilate it to remove the noise and find the contours in the mask. Finally, we draw rectangles around the contours to show the detected hand movements.
