@@ -1,0 +1,11 @@
+mark = int (input ("give me your mark: "))
+if( mark >=90):
+  print("Grade A!")
+else:
+ if( mark >=75):
+  print("GRADE B!")
+ else:
+   if(mark>=65):
+    print("GRADE C!")
+   else:
+    print("GRADE D !")
